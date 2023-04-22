@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+<title>Práctica API</title>
+<link rel = "stylesheet" href = "style.css" />
+</head>
+<body>
+    <div id = "fondo">
+        <div id = "indicacion">
+            <p>Cargar archivo (extensiones admitidas .webm, .mp4 o .ogv): </p>
+            <label class = "boton"> 
+                <input type = "file" name = "file" id = "file" accept = ".webm,.mp4,.ogv">Seleccionar</input>
+            </label>
+        </div>
+        <figure style = "text-align: center">
+            <video id = "video" width = "620"></video>
+        </figure>
+        <div id = "mando">
+            <button class = "boton" onclick = "document.getElementById('video').play();">Reproducir</button>
+            <button class = "boton" onclick = "document.getElementById('video').pause();">Pausar</button>
+            <button class = "boton" onclick = "volumen('up')">Subir volumen</button>
+            <button class = "boton" onclick = "volumen('down')">Bajar volumen</button>
+        </div>
+        <script src = "script.js"></script>
+    </div>
+</body>
+</html>
